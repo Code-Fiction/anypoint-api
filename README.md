@@ -5,6 +5,6 @@
 Released in 2020.
 
 Made with passion.
-This project is under the [MIT license]().
+This project is under the [MIT license](https://github.com/Code-Fiction/anypoint-api/blob/master/LICENSE).
 
 Give it a ⭐️ if this project helped you!
