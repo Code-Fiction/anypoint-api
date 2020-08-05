@@ -1,0 +1,34 @@
+#%RAML 1.0
+baseUri: https://anypoint.mulesoft.com/mocking/api/v1/links/3cd3d8d2-f5a1-4939-8b92-2809c9e02c49/ # 
+title: CodeFiction API
+
+types:
+  Users: !include /users-data-type.raml
+
+/users:
+  get:
+    queryParameters:
+      origin:
+        required: false
+        enum:
+          - BR
+          - US
+          - ES
+    responses:
+      200:
+        body:
+          application/json:
+            type: Users[]
+            examples:
+              output: !include /users-example.raml
+  post:
+  
+  /{ID}:
+    get:
+      responses:
+        200:
+          body:
+            application/json:
+              type: Users
+              examples:
+                !include /users-detail-example.raml
